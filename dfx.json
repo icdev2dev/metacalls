@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "canisters": {
+    "metacalls_backend": {
+      "type": "rust",
+      "package": "metacalls_backend",
+      "candid": "src/metacalls_backend/metacalls_backend.did"
+    },
+    "metacalls_frontend": {
+      "type": "assets",
+      "source": [
+        "src/metacalls_frontend/assets"
+      ],
+      "dependencies": [
+        "metacalls_backend"
+      ]
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "",
+      "args": ""
+    }
+  }
+}
