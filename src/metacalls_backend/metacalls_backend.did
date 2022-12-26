@@ -1,3 +1,30 @@
 service : {
-    "greet": (text) -> (text) query;
+
+
+    "init_function": (text) -> (text);
+    "dos_list_methods": () -> (text) query;
+    "dos_add_proposal": (text) -> (text);
+    "dos_list_proposals": () -> (text);
+    "dos_set_timer_interval": (text) -> (text);
+
+
+    "mc_set_time_to_archive_message": (text) -> (text);
+    "mc_set_timer_interval" : (text) -> (text);
+    
+
+
+    "create_message": (text) -> (text) ;
+    "sign_message": (text) -> (text);
+
+    "create_signed_message": (text) -> (text);
+    
+    "list_messages": () -> (text);
+
+    "create_derived_identity": (text) -> (text) ;
+    "list_derived_identities": () -> (text) query;
+    "get_derived_identity": (text) -> (text) query;
+
+    "create_message_for": (text, text) -> (text);
+    "create_signed_message_with": (text, text) -> (text);
+
 }

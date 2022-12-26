@@ -10,5 +10,8 @@ crate-type = ["cdylib"]
 
 [dependencies]
 candid = "0.8.2"
-ic-cdk = "0.6.0"
-ic-cdk-macros = "0.6.0"
+ic-cdk = {version="0.6.8", features=["timers"]}
+ic-cdk-macros = "0.6.8"
+sha2 = "0.10.6"
+data-encoding="2.3.3"
+regex = "1.6.0"
